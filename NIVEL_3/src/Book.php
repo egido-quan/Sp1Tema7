@@ -35,12 +35,13 @@ class Book {
         return $this->num_pages;
     }
 
-
-
-
-
-
-
-
+    public function toString() {
+        return "Book info:<br>" .
+        "Title: " . $this->title ."<br>".
+        "Writer: " . $this->writer ."<br>".
+        "ISBN: " . $this->isbn ."<br>".
+        "Genre: " . $this->genre ."<br>".
+        "Page qty: " . $this->num_pages."<br>";
+    }
 
 }
